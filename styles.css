@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* outline: 2px solid red; */
+}
+
+body { 
+    background: linear-gradient(to bottom, white, lightblue);
+}
+
+/* HEADER CONTAINER */
+
+header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    flex: auto;
+}
+
+.project-name {
+    font-size: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    text-transform: uppercase;
+    font-weight: bold; 
+    gap: 35px; 
+    user-select: none;
+    align-items: center;
+
+}
+
+.board-container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-name {
+    display: flex;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-size: 40px; 
+    font-weight: bold; 
+    color: white;
+    text-align: center; 
+    padding: 10px 20px; 
+    background: linear-gradient(135deg, #00bfff, #1e90ff); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.button-color-selection {
+    display: flex;
+    height: 48px;
+    width: 100px;
+    padding: 0px !important;
+    justify-content: center;
+    align-items: center;
+    cursor: auto !important;
+}
+
+
+input {
+    background: transparent;
+    border: none;
+    width: 80%;
+    height: 80%;
+}
+
+.buttons div {
+    display: flex;
+    background: linear-gradient(to bottom, white, rgb(175, 235, 255)); 
+    border: 2px solid deepskyblue;
+    border-radius: 8px; 
+    padding: 15px 25px; 
+    font-size: 16px; 
+    color: deepskyblue; 
+    text-align: center; 
+
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.buttons div:hover {
+    transform: scale(1.06); 
+    background: linear-gradient(to bottom, lightblue, deepskyblue);
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIBN CONTAINER */
+
+.board {
+    display: flex;
+    width: 640px; 
+    height: 640px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white;
+
+}
+
+.pixel {
+    background-color: unset;
+    user-select: none;
+    /* outline: 1px solid red; */
+}
+#sizeValue {
+    width: 70px;
+}
+
+.button-active {
+    background: linear-gradient(to bottom, lightblue, deepskyblue) !important;
+    color: white !important;
+}
+
+

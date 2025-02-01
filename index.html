@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="project-name">Etch-a-Sketch</div>
+
+        <div class="buttons">
+            <div class="button-color-selection">
+                <input type="color" id="color-picker">
+            </div>
+            <div class="button-eraser" id="eraser">eraser</div>
+            <div class="button-clear" id="clear">clear</div>
+            <div class="button-change-the-size">
+                <input type="range" class="slider" id="size" min="1" max="100" value="50">
+                <span id="sizeValue">50 * 50</span>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="board-container">
+            <div class="board"></div>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
